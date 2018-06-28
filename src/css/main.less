@@ -1,0 +1,88 @@
+body {
+    font-size: 14px;
+}
+.red {color: #ff3737;}
+.container {width: 1200px;margin-left: auto;margin-right: auto;}
+.page-header {
+    height: 60px;background-color: #fff;
+    &-logo {float: left;}
+    &-nav {float: right;line-height: 60px;}
+}
+.page-banner {
+    width: 100%;height: 389px;min-width: 1200px;position: relative;overflow: hidden;
+    a {
+        width: 1920px;
+        height: 389px;
+        margin-left: -960px;
+        position: absolute;
+        top: 0;
+        left: 50%
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.page-section-rent, .page-section-buy {
+    background-color: #f4f4f4;padding: 40px 0;
+    &-header {
+        a {color: #ff3737;font-size: 20px;float: right;margin-top: 75px;}
+    }
+    ul {
+        li {
+            transition: all .2s ease-in-out;
+            box-shadow: 0px 0px 8px rgba(98, 98, 98, .65);
+            position: relative;width: 275px;background-color: #fff;float: left;margin-top: 40px;margin-right: 33px;
+            &:hover {
+                transform: translateY(-5px);
+            }
+            &.tag-hot {
+                &::before {
+                    top: -4px;left: -3px;
+                    content: '';width: 77px;height: 76px;position: absolute;
+                    background: url('../images/game-cover-tag.png') no-repeat 0 0;
+                }
+            }
+            a {text-decoration: none;}
+            .info {margin-top: 10px;margin-bottom: 15px;height: 40px;line-height: 40px;padding: 0 10px;}
+            .game-name {font-size: 20px;color: #555;float: left;}
+            .game-tag {
+                float: right;
+                width: 115px;height: 40px;line-height: 40px;font-size: 18px;color: #fff;text-align: center;
+                &-red {background: url('../images/game-tag-red.png') no-repeat 0 0;}
+                &-yellow {background: url('../images/game-tag-yellow.png') no-repeat 0 0;}
+            }
+            .price {font-size: 12px;padding: 0 10px;padding-bottom: 15px;}
+            .price-standard {
+                float: left;color: #ff3737;
+
+                span {color: #555;}
+            }
+            .price-tag {float: right;}
+        }
+    }
+}
+
+.page-section-buy {background-color: #fff;}
+
+.page-section-merchants {
+    background-color: #f4f4f4;padding: 45px 0;
+    ul {margin-top: 30px;}
+    table {width: 100%;}
+    td {vertical-align: top;}
+    li {
+        position: relative;background-color: #fff;float: left;line-height: 2.2;margin-left: 100px;
+        &:first-child {margin-left: 0;}
+        .info {width: 333-40px;height: 210-40px;padding: 20px;background-color: #fff;}
+        .link {
+            box-shadow: 0px 0px 8px rgba(98, 98, 98, .65);padding: 0 15px;
+            display: block;height: 40px;line-height: 40px;background-color: #fbc200;color: #fff;
+            &:hover {opacity: .9;}
+            .view {
+                background: url('../images/view-arrow.png') no-repeat 0 10px;padding-left: 20px;
+            }
+        }
+    }
+}
+
+.page-footer {text-align: center;height: 70px;line-height: 70px;background-color: #000;font-size: 12px;color: #fff;}
